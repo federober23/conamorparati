@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Para ti, mi amor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fbe9f2, #e0b3e5);
+        font-family: "Segoe UI", sans-serif;
+        color: #5a2a68;
+        overflow-x: hidden;
+      }
+      .hero {
+        text-align: center;
+        padding: 80px 20px 30px;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #b83280;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .card-love-closed {
+        background-color: #ffcce0;
+        border: 2px solid #d66ba0;
+        border-radius: 15px;
+        padding: 20px;
+        max-width: 700px;
+        margin: 30px auto;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .card-love-opened {
+        display: none;
+        background-color: #ffe6f0;
+        border: 2px dashed #d66ba0;
+        border-radius: 15px;
+        padding: 30px;
+        margin-top: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .images {
+        padding: 40px 0;
+      }
+      .images img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: 4px solid #ff99cc;
+      }
+      .images .col-md-4 {
+        position: relative;
+      }
+      .images .col-md-4::after {
+        content: "💖 💞 💕";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        animation: float 3s infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #7e3c7b;
+      }
+      .btn-open {
+        background-color: #d66ba0;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .btn-open:hover {
+        background-color: #b83280;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero" data-aos="fade-up">
+      <h1>Feliz Día de las Madres</h1>
+      <p>
+        "Hoy más que nunca entiendo que tú merecías ser amada con paciencia,
+        respeto y ternura... Perdóname por no verlo antes."
+      </p>
+    </section>
+
+    <div class="card-love-closed" data-aos="zoom-in">
+      <h2>💌 Tengo algo para ti...</h2>
+      <p>Una carta desde lo más profundo de mi corazón</p>
+      <button
+        class="btn-open"
+        onclick="document.getElementById('openedCard').style.display='block'; this.style.display='none';"
+      >
+        Abrir Carta
+      </button>
+    </div>
+
+    <div class="container card-love-opened" id="openedCard" data-aos="fade-up">
+      <h2 class="text-center">Mi amor:</h2>
+
+      <p>
+        Mi amor, sé que fallé cuando más me necesitabas. En un momento que debí
+        protegerte, comprenderte y acompañarte, dejé que el estrés y los
+        problemas se interpusieran entre nosotros. Hoy, con el alma en la mano,
+        te digo que estoy profundamente arrepentido.
+      </p>
+      <p>
+        Debí tratarte como la reina que eres. Me doy cuenta de cuánto amor
+        mereces y de lo afortunado que soy por tenerte. Quiero que sepas que mi
+        intención es reconstruir lo que se rompió, paso a paso, con humildad y
+        todo mi amor.
+      </p>
+      <p>
+        Te propongo algo: seguir caminando juntos, sanar nuestras heridas y
+        cuidar de nuestro futuro como familia. Estoy dispuesto a aprender,
+        cambiar y volver a enamorarte cada día.
+      </p>
+
+      <hr />
+
+      <p>
+        Sigo esforzándome cada día por ti y por nuestra niña, para darles lo
+        mejor que tengo en esta vida. Y si algún día llego a faltar, quiero que
+        tengan su casita, su seguridad, su mundo lleno de amor... mis niñas, mis
+        chifladitas hermosas.
+      </p>
+      <p>
+        Solo tengo ojos para ti, y solo para ti. Aun con mis errores, nunca dejé
+        de amarte. Siempre fuiste tú.
+      </p>
+      <p>
+        El hombre se equivoca. Me tocó hacerlo. Pero nunca es tarde para
+        recuperar lo que realmente importa: tú, nosotros, nuestra familia.
+      </p>
+      <p>
+        Gracias por ser la mujer que eres. Te amo más allá de las palabras, más
+        allá de los errores. Estoy aquí, con todo lo que soy, para ti y por ti.
+      </p>
+
+      <hr />
+
+      <p>
+        A veces la vida nos pone pruebas que no sabemos cómo enfrentar, y yo me
+        perdí en medio del miedo y la frustración. Pero aun en mis peores días,
+        mi amor por ti nunca se fue. Solo necesitaba abrir los ojos y darme
+        cuenta de que lo más valioso siempre estuvo frente a mí: tú.
+      </p>
+
+      <p>
+        Prometo que en esta nueva etapa, ya juntos, te trataré como lo mereces:
+        con ternura, respeto y amor constante. Prometo bailar contigo en casa
+        aunque no haya música, jugar con nuestra niña como si el mundo fuera
+        solo de ella, darte masajes cuando llegues cansada, y contarte cómo me
+        fue en el trabajo solo para escucharte reír o sorprenderte.
+      </p>
+
+      <p>
+        Empecé desde abajo. ¿Lo recuerdas? Trabajos duros, jornadas largas como
+        guardia, en limpieza… buscando oportunidades, y siendo rechazado una y
+        otra vez cuando tú estabas embarazada. Yo solo quería darte algo mejor,
+        y aunque lo hice mal, lo intenté siempre con el corazón. Todo lo que he
+        construido, lo hice pensando en ti.
+      </p>
+
+      <p>
+        No soy perfecto, y lo reconozco. Pero si algo he demostrado es que
+        siempre me esfuerzo, incluso cuando estoy roto por dentro. Porque para
+        mí, tú siempre valiste cada esfuerzo, cada caída, cada intento.
+      </p>
+
+      <p>
+        Si me das la oportunidad, quiero ser ese compañero que ríe contigo, que
+        te escucha, que te abraza fuerte en tus días difíciles. Quiero caminar a
+        tu lado, compartir sueños, sanar heridas, y construir un hogar lleno de
+        amor, respeto y nuevas memorias.
+      </p>
+
+      <p>
+        No solo te amo cuando estás bien… te amo también cuando estás cansada,
+        enojada, triste o vulnerable. Te amo como eres, y me comprometo a amarte
+        mejor, más consciente y más fuerte.
+      </p>
+
+      <hr />
+
+      <p>
+        ¿Te acuerdas cuando nos conocimos? Cuando te graduaste, cuando yo
+        también logré mi título… esas miradas, esa emoción, ese orgullo mutuo.
+        Hemos pasado por momentos hermosos que son solo nuestros. No todo fueron
+        problemas, también hubo risas, abrazos largos, sueños compartidos y días
+        que todavía viven en mi memoria como si fueran ayer.
+      </p>
+
+      <p>
+        Amor mío, si recordamos todo lo bueno que hemos construido juntos, verás
+        que lo nuestro está lleno de razones para seguir amándonos. Hemos sido
+        testigos de muchas batallas, pero también de victorias. Y cuando estamos
+        juntos, no hay barrera que no podamos romper.
+      </p>
+
+      <p>
+        Eres el motor de mi vida. Me das fuerza cuando siento que no puedo más.
+        Tu risa me enciende el alma, tu mirada me da paz. No hay nada más real
+        que este amor que siento por ti. Tú me completas, me inspiras y me das
+        energía para seguir adelante.
+      </p>
+
+      <p class="fst-italic text-center mt-4">
+        <strong
+          >“El amor todo lo sufre, todo lo cree, todo lo espera, todo lo
+          soporta. El amor nunca deja de ser.”</strong
+        ><br />
+        — 1 Corintios 13:7-8
+      </p>
+
+      <p class="text-end"><em>Con todo mi amor, Federico</em></p>
+    </div>
+
+    <section class="container images" data-aos="fade-up">
+      <div class="row text-center">
+        <!-- Imagen 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.26.08_0cb30bd1.jpg"
+              alt="Imagen 1 bonita"
+            />
+            <p class="caption">
+              "Dios me bendijo con tu vida, porque cuando te encontré, encontré
+              a mi hogar."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.26.08_b7d682d6.jpg"
+              alt="Imagen 2 bonita"
+            />
+            <p class="caption">
+              "Donde hay amor, allí está Dios. Y tú, amor mío, eres prueba viva
+              de su amor en mi vida."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.26.08_c90abda3.jpg"
+              alt="Imagen 3 bonita"
+            />
+            <p class="caption">
+              "Todo lo puedo en Cristo que me fortalece, y contigo a mi lado,
+              aún más."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.49.43_71d3cadc.jpg"
+              alt="Imagen 4 bonita"
+            />
+            <p class="caption">
+              "Amarte es agradecerle a Dios todos los días por haber cruzado
+              nuestros caminos."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.49.43_b8119cdc.jpg"
+              alt="Imagen 5 bonita"
+            />
+            <p class="caption">
+              "Cuando oré por amor, Dios me dio tu corazón."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.49.44_21553586.jpg"
+              alt="Imagen 6 bonita"
+            />
+            <p class="caption">
+              "El amor verdadero es paciente y bondadoso. Contigo, he aprendido
+              eso y más."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.49.44_2580ff26.jpg"
+              alt="Imagen 7 bonita"
+            />
+            <p class="caption">
+              "Eres mi regalo divino, mi propósito, mi compañera bendita."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 8 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.49.44_bc1bd9c7.jpg"
+              alt="Imagen 8 bonita"
+            />
+            <p class="caption">
+              "Aunque tengamos días grises, Dios siempre ilumina nuestro amor
+              con esperanza."
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen 9 -->
+        <div class="col-md-4 mb-4">
+          <div class="image-card">
+            <img
+              src="img/Imagen de WhatsApp 2025-04-28 a las 15.49.44_daf4e75c.jpg"
+              alt="Imagen 9 bonita"
+            />
+            <p class="caption">
+              "Gracias a Dios por ponerte en mi camino. Contigo aprendí lo que
+              significa amar de verdad."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer data-aos="zoom-in">
+      Creado por Federico — Para la más hermosa del mundo ❤️<br />
+      <small
+        >Tu programador favorito, Federico, te dedique tiempo para desarrollar
+        esto pensando en ti en cada momento.</small
+      >
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
